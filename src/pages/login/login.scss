@@ -1,0 +1,75 @@
+$pm_blue: #1877F2;
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper {
+        width: 70%;
+        height: 70%;
+        display: flex;
+    }
+    &__left,
+    &__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__left {
+        &__logo__text {
+            font-size: 50px;
+            font-weight: 800;
+            color: $pm_blue;
+        }
+        &__desc {
+            font-size: 24px;
+        }
+    }
+    &__right {
+        &__container {
+            height: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__form {
+        &__input {
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            font-size: 18px;
+            padding-left: 20px;
+            &:focus {
+                outline: none;
+            }
+        }
+        &__btn,
+        &__btn__register {
+            height: 50px;
+            border-radius: 10px;
+            background-color: $pm_blue;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        &__forgot {
+            text-align: center;
+            color: $pm_blue;
+        }
+        &__btn__register {
+            width: 60%;
+            font-size: 18px;
+            background-color: #3AA426;
+            align-self: center;
+        }
+    }
+}
